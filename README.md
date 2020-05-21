@@ -11,4 +11,4 @@ If you would like access to the assets used to create these scripts, shoot me an
 Note: If you are interested in tutorials or code snippets for Google Earth Engine JavaScript API, feel free to write me an email to shua.stratos@gmail.com
 
 
-####**----- Put short summary of each script here, ya dummy -------**
+#### **----- Put short summary of each script here, ya dummy -------**
