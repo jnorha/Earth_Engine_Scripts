@@ -68,7 +68,7 @@ var saviParams = {min: -1, max: 1, palette: ['orange', 'white', 'teal']};
 var TCAP = function(image)
 {
   var brightness = image.expression(
-    '(BLUE * 0.3029) + (GREEN * 0.2786) + (RED * 0.4733) + (NIR1 * 0.5599) + (SWIR1 * 0.508) + (SWIR2 + 0.1872)', 
+    '(BLUE * 0.3029) + (GREEN * 0.2786) + (RED * 0.4733) + (NIR1 * 0.5599) + (SWIR1 * 0.508) + (SWIR2 * 0.1872)', 
     {
       'GREEN': image.select('B3'),
       'RED': image.select('B4'),
@@ -81,7 +81,7 @@ var TCAP = function(image)
 image = image.addBands(brightness.rename('brightness'));
 
   var greenness = image.expression(
-    '(BLUE * -0.2941) + (GREEN * -0.243) + (RED * -0.5424) + (NIR1 * 0.7276) + (SWIR1 * 0.0713) + (SWIR2 + -0.1608)', 
+    '(BLUE * -0.2941) + (GREEN * -0.243) + (RED * -0.5424) + (NIR1 * 0.7276) + (SWIR1 * 0.0713) + (SWIR2 * -0.1608)', 
     {
       'GREEN': image.select('B3'),
       'RED': image.select('B4'),
@@ -94,7 +94,7 @@ image = image.addBands(brightness.rename('brightness'));
 image = image.addBands(greenness.rename('greenness'));
 
   var wetness = image.expression(
-    '(BLUE * 0.1511) + (GREEN * 0.1973) + (RED * 0.3283) + (NIR1 * 0.3407) + (SWIR1 * -0.7117) + (SWIR2 + -0.4559)', 
+    '(BLUE * 0.1511) + (GREEN * 0.1973) + (RED * 0.3283) + (NIR1 * 0.3407) + (SWIR1 * -0.7117) + (SWIR2 * -0.4559)', 
     {
       'GREEN': image.select('B3'),
       'RED': image.select('B4'),
