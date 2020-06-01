@@ -1,7 +1,7 @@
 # Earth_Engine_Scripts
  Google Earth Engine JavaScript files as various tools
 
-##Google Earth Engine Scripts
+### Google Earth Engine Scripts
 This is a collection of code to be used with Google Earth Engine Javascript API. 
 If you are already signed up in Google Earth Engine, just copy and paste my code in the Google Earth Engine Code Editor.
 
